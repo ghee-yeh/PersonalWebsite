@@ -74,10 +74,10 @@ export default function Home() {
       <div className="b2" style={fadeInStyle(5)}>
         {translation[language].paragraph_4}
       </div>
-      {/* <div className="b2" style={fadeInStyle(6)}>
+      <div className="b2" style={fadeInStyle(6)}>
         {translation[language].paragraph_5a}{" "}
         <a href="experience">{translation[language].paragraph_5b}</a>.
-      </div> */}
+      </div>
       <div style={fadeInStyle(6)}>
         <Spotify />
       </div>
