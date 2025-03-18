@@ -1,83 +1,80 @@
 .container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: start;
-    width: 100%;
-    border-radius: 5px;
-    padding: 5px;
-    transition: background-color 0.2s ease;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+  width: 100%;
+  border-radius: 5px;
+  padding: 5px;
+  transition: background-color 0.2s ease;
+  justify-content: space-between;
 }
 
-
-
 .container:hover {
-    background-color: var(--border);
-    cursor: pointer;
+  background-color: var(--border);
+  cursor: pointer;
 }
 
 .left {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: start;
-    gap: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+  gap: 10px;
 }
 
 .texts {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
 }
 
 .textsTop {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: start;
-    gap: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+  gap: 5px;
 }
 
 .image {
-    width: 40px;
-    height: 40px;
-    object-fit: cover;
-    border-radius: 100%;
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 100%;
 }
 
 .company {
-    font-weight: bold;
-    line-height: 1.2;
+  font-weight: bold;
+  line-height: 1.2;
 }
 
 .position {
-    font-weight: bold;
-    line-height: 1.2;
+  font-weight: bold;
+  line-height: 1.2;
 }
 
 .description {
-    color: var(--tertiary);
-    line-height: 1.2;
+  color: var(--tertiary);
+  line-height: 1.2;
 }
 
 .year {
-    color: var(--tertiary);
-    line-height: 1.2; 
+  color: var(--tertiary);
+  line-height: 1.2;
 }
 
 .year_column {
-    display: none;
+  display: none;
 }
 
 @media (max-width: 500px) {
-    .year {
-        display: none;
-    }
-    .year_column {
-        display: block;
-        padding-top: 5px;
-    }
-    
+  .year {
+    display: none;
+  }
+  .year_column {
+    display: block;
+    padding-top: 5px;
+  }
 }

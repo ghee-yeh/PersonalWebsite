@@ -46,13 +46,6 @@ export default function Home() {
       </div>
       <div className="b2" style={fadeInStyle(3)}>
         {translation[language].paragraph_2a}{" "}
-        <a
-          href="https://posthog.com/blog/what-is-a-product-engineer"
-          target="_blank"
-        >
-          {translation[language].paragraph_2b}
-        </a>
-        .
       </div>
       <div style={fadeInStyle(4)}>
         <Frame

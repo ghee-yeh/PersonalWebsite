@@ -10,6 +10,7 @@ import traveler from "../../public/traveler.jpg";
 import picnic from "../../public/picnic.webp";
 import sivar from "../../public/sivar.jpeg";
 import ftsl from "../../public/ftsl.jpeg";
+import amazon from "../../public/amazon.jpeg";
 import translation from "../_internationalization/translation.json";
 
 export default function Experience() {
@@ -58,6 +59,16 @@ export default function Experience() {
           </div>
           <div style={fadeInStyle(2)}>
             <ExperienceCard
+              company="Amazon"
+              position={translation[language].software_engineer}
+              description={translation[language].amazon_description}
+              year={`2025 - ${translation[language].present}`}
+              image={amazon}
+              url="amazon.com"
+            />
+          </div>
+          <div style={fadeInStyle(3)}>
+            <ExperienceCard
               company="Habitat App"
               position={translation[language].founder}
               description={translation[language].habitat_app}
@@ -66,7 +77,7 @@ export default function Experience() {
               url="https://www.habitat-app.org"
             />
           </div>
-          <div style={fadeInStyle(3)}>
+          <div style={fadeInStyle(4)}>
             <ExperienceCard
               company="traveler"
               position={translation[language].co_founder}
@@ -76,7 +87,7 @@ export default function Experience() {
               url="https://www.get-traveler.com/"
             />
           </div>
-          <div style={fadeInStyle(3)}>
+          <div style={fadeInStyle(5)}>
             <ExperienceCard
               company="Picnic"
               position="Chief Product Officer"
@@ -91,7 +102,7 @@ export default function Experience() {
           <div className="b1" style={{ ...fadeInStyle(4), fontWeight: "bold" }}>
             {translation[language].volunteering}
           </div>
-          <div style={fadeInStyle(5)}>
+          <div style={fadeInStyle(6)}>
             <ExperienceCard
               company="FTSL"
               position={translation[language].founder}
@@ -101,7 +112,7 @@ export default function Experience() {
               url="https://www.instagram.com/fundacionftsl/"
             />
           </div>
-          <div style={fadeInStyle(6)}>
+          <div style={fadeInStyle(7)}>
             <ExperienceCard
               company="SivarLive"
               position={translation[language].co_founder}
@@ -113,7 +124,7 @@ export default function Experience() {
           </div>
         </div>
       </div>
-      <div style={fadeInStyle(4)}>
+      <div style={fadeInStyle(8)}>
         <Footer />
       </div>
     </div>
