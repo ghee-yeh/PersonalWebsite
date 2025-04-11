@@ -64,13 +64,13 @@ export default function Experience() {
               description={translation[language].amazon_description}
               year={`2025 - ${translation[language].present}`}
               image={amazon}
-              url="amazon.com"
+              url="https://aws.amazon.com/"
             />
           </div>
           <div style={fadeInStyle(3)}>
             <ExperienceCard
               company="Habitat App"
-              position={translation[language].founder}
+              position={translation[language].co_founder}
               description={translation[language].habitat_app}
               year={`2022 - ${translation[language].present}`}
               image={habitat}

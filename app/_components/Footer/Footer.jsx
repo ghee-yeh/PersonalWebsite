@@ -15,10 +15,11 @@ export default function Footer() {
 
   return (
     <div className={styles.links}>
-      <a className="b3" href="https://www.x.com/gee_yer_moh/" target="_blank">
+      {/* <a className="b3" href="https://www.x.com/gee_yer_moh/" target="_blank">
         @gee_yer_moh
-      </a>
-      <a className="b3" href="https://github.com/gee-yer-moh" target="_blank">
+      </a> */}
+
+      <a className="b3" href="https://github.com/ghee-yeh" target="_blank">
         github
       </a>
       <a
