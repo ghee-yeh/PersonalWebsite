@@ -3,7 +3,6 @@ My personal website. Feel free to look around.
 
 - **Framework**: Next.js
 - **Deployment**: Vercel
-- **Analytics**: PostHog
 - **Styling**: Pure CSS
 
 # run locally
@@ -21,8 +20,6 @@ Optionally, create a `.env` file with the following variables:
 SPOTIFY_CLIENT_ID
 SPOTIFY_CLIENT_SECRET
 SPOTIFY_REFRESH_TOKEN
-NEXT_PUBLIC_POSTHOG_KEY
-NEXT_PUBLIC_POSTHOG_HOST
 ```
 
 I used [this guide](https://medium.com/@stvehayes/working-with-spotifys-api-to-display-currently-playing-with-react-99544f8797d8) to get the Spotify API working.
