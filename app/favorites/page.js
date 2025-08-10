@@ -66,7 +66,7 @@ export default function Favorites() {
         <div style={{display: "flex", flexDirection: "row", justifyContent: "space-between"}}>
         <Media src="https://i.scdn.co/image/ab67656300005f1fc1c2aa46984f4d3e46f2f77e" url="https://open.spotify.com/show/7Fj0XEuUQLUqoMZQdsLXqp?si=5002405aaa694295" />
         <Media src="https://i.scdn.co/image/ab67656300005f1fa4265d76d07449481c61737d" url="https://open.spotify.com/show/5gqPlUIyrXZfrRdffYq5Sq?si=ce356bf1b0494ec6" />
-        <Media src="https://i.scdn.co/image/ab67656300005f1f7a7091c6e9230538733e4765" url="https://open.spotify.com/show/3j2KMcZTtgTNBKwtZBMHvl?si=299cc0c227684821" />
+        <Media src="https://is1-ssl.mzstatic.com/image/thumb/Podcasts221/v4/97/b9/53/97b953b0-7d37-959b-a5e1-e02032ed1a97/mza_17272148593270701909.jpg/1200x1200bf.webp" url="https://open.spotify.com/show/0hCbmBt7bJVqtvg3aNUsgt?si=4b482cde13c2413b" />
       </div>
       </div>
     </div>

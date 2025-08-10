@@ -1,7 +1,6 @@
 import "./globals.css";
 
 import { Lora } from "next/font/google";
-import { CSPostHogProvider } from "./providers";
 const lora = Lora({
   subsets: ["latin"],
   display: "swap",
@@ -22,9 +21,7 @@ const fadeInStyle = (index) => ({
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={lora.variable}>
-      <CSPostHogProvider>
         <body>{children}</body>
-      </CSPostHogProvider>
     </html>
   );
 }

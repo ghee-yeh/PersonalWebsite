@@ -3,12 +3,13 @@
   flex-direction: column;
   justify-content: start;
   align-items: start;
-  width: fit-content;
+  width: 100%;
 }
 
 .pronunciation {
-    margin-left: 45%;
-    text-align: start;
+    text-align: end;
     color: var(--tertiary);
     width: 100%;
 }
+
+/* Responsive styling for small iPhone screens */

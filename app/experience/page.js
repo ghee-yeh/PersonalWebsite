@@ -7,7 +7,6 @@ import Footer from "../_components/Footer";
 import ExperienceCard from "./_components/ExperienceCard";
 import habitat from "../../public/habitat.jpg";
 import traveler from "../../public/traveler.jpg";
-import picnic from "../../public/picnic.webp";
 import sivar from "../../public/sivar.jpeg";
 import ftsl from "../../public/ftsl.jpeg";
 import amazon from "../../public/amazon.jpeg";
@@ -86,17 +85,7 @@ export default function Experience() {
               image={traveler}
               url="https://www.get-traveler.com/"
             />
-          </div>
-          <div style={fadeInStyle(5)}>
-            <ExperienceCard
-              company="Picnic"
-              position="Chief Product Officer"
-              description={translation[language].picnic}
-              year="2021"
-              image={picnic}
-              url="https://apps.apple.com/ca/app/picnic-dive-into-communities/id1544626265"
-            />
-          </div>
+          </div>          
         </div>
         <div style={{ display: "flex", flexDirection: "column", gap: "20px" }}>
           <div className="b1" style={{ ...fadeInStyle(4), fontWeight: "bold" }}>

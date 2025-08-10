@@ -2,10 +2,10 @@
   "en": {
     "title": "/ghee-YEHR-moh ah-veh-LAHR/",
     "paragraph_1": "I'm on a lifelong journey to enhance the human experience through technology. I enjoy working in highly innovative enviroments to do this quickly and disruptively.",
-    "paragraph_2a": "I'm a software development engineer at Amazon. Before that, I graduated from Columbia University where I studied the beautiful subject of pure mathematics and built a couple of startups.",
-    "paragraph_3a": "Tallest mountain/volcano",
+    "paragraph_2a": "I’m a software engineer at Amazon, part of a new initiative building AI agents for AWS's supply chain — making sure new servers reach our data centers as fast as possible.",
+    "paragraph_3a": "Tallest mountain/volcano", 
     "paragraph_3b": " in Central America.",
-    "paragraph_4": "My building mentality revolves around extremely fast execution, clean code with low technical debt, and long-lasting reliability.",
+    "paragraph_4": "Before that, I completed my undergrad at Columbia University, where I studied the beautiful subject of pure mathematics and built a couple of startups.",
     "paragraph_5a": "In case you didn't come from my LinkedIn, here's a summary of my ",
     "paragraph_5b": "experience",
     "paragraph_6": "Disclaimer: I share Spotify with my wife.",
@@ -21,19 +21,19 @@
     "present": "Present",
     "habitat_app": "Automated mortgage application reviews",
     "traveler": "AI manufacturing traveler for modular construction",
-    "picnic": "Social media for GenZ",
     "ftsl": "Educating low income deaf communities",
     "sivar": "Promoting local Salvadoran talent",
     "software_engineer": "Software Development Engineer",
-    "amazon_description": "Delivering clean code."
+    "amazon_description": "AI agents for the AWS server supply chain.",
+    "currently_reading": "Currently Reading"
   },
   "es": {
     "title": "si es mas fácil, solo guille",
     "paragraph_1": "Me interesa mejorar la experiencia humana a través de la tecnología - disfruto trabajar en lugares altamente innovadores para hacer esto de manera rápida y con gran impacto.",
-    "paragraph_2a": "Soy ingeniero de desarrollo de software en Amazon. Antes de eso, me gradué de la Universidad de Columbia, donde estudié matemática pura y fundé algunas startups.",
+    "paragraph_2a": "Soy ingeniero de software en Amazon, parte de una nueva iniciativa que desarrolla agentes de IA para la cadena de suministro de AWS, asegurando que los nuevos servidores lleguen a nuestros centros de datos lo más rápido posible.",
     "paragraph_3a": "Punto mas alto",
     "paragraph_3b": " de Centroamérica.",
-    "paragraph_4": "Mi mentalidad de desarrollo se basa en una ejecución extremadamente rápida, código limpio con baja deuda técnica y una confiabilidad duradera.",
+    "paragraph_4": "Antes de eso, me gradué de la Universidad de Columbia, donde estudié matemática pura y fundé algunas startups.",
     "paragraph_5a": "Por si no venís de mi LinkedIn, aquí hay un resumen sobre mi ",
     "paragraph_5b": "experiencia",
     "paragraph_6": "Ojo: comparto Spotify con mi esposa.",
@@ -49,10 +49,10 @@
     "present": "Hoy",
     "habitat_app": "Automatizando revisiones en aplicaciones de hipotecas",
     "traveler": "AI para la documentacion de la construcción modular",
-    "picnic": "Red social para GenZ",
     "ftsl": "Educando comunidades sordas de bajos ingresos",
     "sivar": "Promoviendo el talento local salvadoreño",
     "software_engineer": "Ingeniero de Desarrollo de Software",
-    "amazon_description": "Programando."
+    "amazon_description": "Agentes AI para el supply chain de servidores de AWS.",
+    "currently_reading": "Lo que estoy leyendo"
   }
 }
