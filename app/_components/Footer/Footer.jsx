@@ -24,7 +24,7 @@ export default function Footer() {
       </a>
       <a
         className="b3"
-        href="https://www.linkedin.com/in/jose-guillermo-avelar/"
+        href="https://www.linkedin.com/in/guillermo-avelar/"
         target="_blank"
       >
         linkedin
