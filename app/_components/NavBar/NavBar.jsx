@@ -3,52 +3,40 @@
 import styles from "./style.module.css";
 import Polygon from "../Polygon";
 import { useState, useEffect } from "react";
-import { useRouter } from "next/navigation";
+import { useRouter, usePathname } from "next/navigation";
+import { useLocale } from 'next-intl';
 
 export default function NavBar() {
   const router = useRouter();
+  const pathname = usePathname();
+  const locale = useLocale();
   const [sides, setSides] = useState(12);
-  const [theme, setTheme] = useState("light");
-  const [language, setLanguage] = useState("en");
-
-  // Apply theme class to document body
-  useEffect(() => {
-    document.body.className = `${theme}-theme`;
-  }, [theme]);
-
-  useEffect(() => {
-    if (window) {
-      const savedLanguage = localStorage.getItem("language") || "en";
-      setLanguage(savedLanguage);
-    }
-  }, []);
 
   const handlePolygonClick = () => {
     setSides((current) => (current <= 3 ? 12 : current - 1));
   };
 
+  const switchLocale = () => {
+    const newLocale = locale === 'en' ? 'es' : 'en';
+    const newPath = pathname.replace(`/${locale}`, `/${newLocale}`);
+    router.push(newPath);
+  };
+
   return (
     <div className={styles.container}>
-      <div onClick={() => router.push("/")}>
+      <div onClick={() => router.push(`/${locale}`)}>
         <Polygon
           size={25}
           sides={sides}
-          color={theme === "dark" ? "#ffffff" : "#000000"}
+          color="var(--primary)"
         />
       </div>
       <div className={styles.links}>
         <div
           className="b3"
-          onClick={() => {
-            const newLang = language === "en" ? "es" : "en";
-            setLanguage(newLang);
-            if (window) {
-              localStorage.setItem("language", newLang);
-              window.location.reload();
-            }
-          }}
+          onClick={switchLocale}
         >
-          {language === "en" ? "español" : "english"}
+          {locale === "en" ? "español" : "english"}
         </div>
       </div>
     </div>
