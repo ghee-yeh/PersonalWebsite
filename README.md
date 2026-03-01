@@ -1,6 +1,6 @@
 # Personal Website
 
-Modern personal website built with Next.js 16, featuring smooth animations, internationalization, and responsive design.
+Minimalist personal website built with Next.js 16, featuring smooth animations, internationalization, and responsive design.
 
 ## Features
 
