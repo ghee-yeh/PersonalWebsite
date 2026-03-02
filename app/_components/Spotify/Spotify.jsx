@@ -27,10 +27,6 @@ const msToMinutes = (ms, isSpanish) => {
   return isSpanish ? `hace ${minutes}m` : `${minutes}m ago`;
 }
 
-const findFirstNonExplicitTrack = (tracks) => {
-  return tracks?.items?.find(item => !item?.track?.explicit);
-};
-
 export default function Spotify() {
   const locale = useLocale();
   const t = useTranslations();
@@ -43,28 +39,14 @@ export default function Spotify() {
         const response = await fetch('/api/spotify');
         if (!response.ok) return;
         
-        const { nowPlayingSong, recentlyPlayedSong } = await response.json();
+        const { nowPlaying, recentTrack } = await response.json();
         
-        if (nowPlayingSong?.is_playing && nowPlayingSong?.currently_playing_type === 'track') {
-          setData({
-            title: nowPlayingSong.item.name,
-            artist: nowPlayingSong.item.artists[0].name,
-            image: nowPlayingSong.item.album.images[0].url,
-            link: nowPlayingSong.item.external_urls.spotify,
-          });
+        if (nowPlaying) {
+          setData(nowPlaying);
           setIsPlaying(true);
-        } else {
-          const track = findFirstNonExplicitTrack(recentlyPlayedSong);
-          if (track) {
-            const timeSince = new Date() - new Date(track.played_at);
-            setData({
-              title: track.track.name,
-              artist: track.track.artists[0].name,
-              image: track.track.album.images[0].url,
-              link: track.track.external_urls.spotify,
-              time: msToMinutes(timeSince, locale === 'es')
-            });
-          }
+        } else if (recentTrack) {
+          const timeSince = new Date() - new Date(recentTrack.playedAt);
+          setData({ ...recentTrack, time: msToMinutes(timeSince, locale === 'es') });
         }
       } catch (error) {
         console.error('Spotify fetch error:', error);
