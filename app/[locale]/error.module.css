@@ -1,0 +1,54 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  gap: 24px;
+  font-family: var(--font-lora);
+  background: var(--background);
+  color: var(--foreground);
+}
+
+.polygonWrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 280px;
+  height: 280px;
+}
+
+.spinning {
+  position: absolute;
+  animation: spin 20s linear infinite;
+}
+
+.code {
+  position: relative;
+  font-size: 64px;
+  font-weight: 700;
+  color: var(--secondary);
+  letter-spacing: 4px;
+  z-index: 1;
+  user-select: none;
+}
+
+.link {
+  color: var(--tertiary);
+  text-decoration: none;
+  transition: color 0.3s ease;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: var(--font-lora);
+}
+
+.link:hover {
+  color: var(--foreground);
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}

@@ -1,7 +1,9 @@
-.polygon:hover {
-  cursor: pointer;
-}
-
 .polygon {
   fill: var(--primary);
+  animation: spin 20s linear infinite;
+}
+
+@keyframes spin {
+  from { transform-origin: center; transform: rotate(0deg); }
+  to { transform-origin: center; transform: rotate(360deg); }
 }

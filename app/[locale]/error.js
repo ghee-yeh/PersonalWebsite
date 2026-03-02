@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { fadeInVariants, staggerContainer } from "../_utils/animations";
 import styles from "./error.module.css";
 
-export default function NotFound() {
+export default function Error({ error, reset }) {
   return (
     <motion.div
       className={styles.container}
@@ -22,14 +22,14 @@ export default function NotFound() {
             fill="var(--primary)"
           />
         </svg>
-        <span className={styles.code}>404</span>
+        <span className={styles.code}>500</span>
       </motion.div>
       <motion.p className="b1" variants={fadeInVariants}>
-        Page not found
+        Something went wrong
       </motion.p>
-      <motion.a href="/en" className={`b2 ${styles.link}`} variants={fadeInVariants}>
-        Go home
-      </motion.a>
+      <motion.button onClick={reset} className={`b2 ${styles.link}`} variants={fadeInVariants}>
+        Try again
+      </motion.button>
     </motion.div>
   );
 }
